@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid rgb(90, 167, 243);
+            border-collapse: collapse;
+        }
+
+        thead {
+            color: white;
+            background-color: rgb(9, 67, 144);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #0f75ac;
+            color: #f6f0f0;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #80baf4;
+            color: #f7f7f7;
+        }
+
+        tbody tr:hover {
+            background-color: rgb(19, 25, 148);
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="search-input" placeholder="Name" />
+        <button type="button" id="search-button">Search</button>
+    </form>
+    <button type="button" id="clear-button">Clear</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Scale</th>
+            </tr>
+        </thead>
+        <tbody id="bodyTabla">
+
+        </tbody>
+
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
